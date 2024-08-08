@@ -1,0 +1,2 @@
+runtime: java11
+entrypoint: java -cp target/HelloWorldApp-1.0-SNAPSHOT.jar HelloWorld
