@@ -6,4 +6,3 @@ steps:
     args: ['app', 'deploy']
 options:
   logging: CLOUD_LOGGING_ONLY  # You can use CLOUD_LOGGING_ONLY or NONE
-  logsBucket: gs://hello-world-tutorial-431906
