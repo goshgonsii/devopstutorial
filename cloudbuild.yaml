@@ -3,6 +3,10 @@ steps:
     entrypoint: 'mvn'
     args: ['clean', 'package']
   - name: 'gcr.io/cloud-builders/gcloud'
-    args: ['app', 'deploy']
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        gcloud app deploy --quiet
 options:
-  logging: CLOUD_LOGGING_ONLY  # You can use CLOUD_LOGGING_ONLY or NONE
+  logging: CLOUD_LOGGING_ONLY  # or NONE if you prefer
